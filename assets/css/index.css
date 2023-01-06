@@ -1,0 +1,49 @@
+.callout {
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #eee;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.callout-info {
+  background-color: --bs-primary;
+}
+
+.callout {
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid;
+  border-left-width: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+/* lightmode */
+
+[data-bs-theme=light] body {
+  transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
+  color: var(--bs-dark);
+  background-color: var(--bs-light);
+}
+
+[data-bs-theme=dark] body{
+  transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
+}
+
+[data-bs-theme=light] .callout {
+  transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s;
+  border-color: var(--bs-primary);
+  border-left-color: var(--bs-primary);
+}
+
+/* change accordion color */
+
+/* change Header background color to --bs-dark and color to --bs-light */
+[data-bs-theme=light] #mainNav.navbar-shrink {
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+}
+[data-bs-theme=light] #mainNav.navbar-shrink a {
+  /* background-color: var(--bs-light); */
+  color: var(--bs-dark);
+}
